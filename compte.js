@@ -21,12 +21,12 @@ class CompteBancaire{
 const c1= new CompteBancaire("Mukendi",15000);
 try{c1.retirer(30000);
     console.log("Retrait effectué");
-}catch(Error){
-    console.log("Echec:"+Error.message)
+}catch(erreur){
+    console.log("Echec:"+erreur.message)
 }
 try{c1.deposer(-500);
     console.log("Depot effectué");}
-    catch(Error){
-        console.log("Echec:"+Error.message);
+    catch(erreur){
+        console.log("Echec:"+erreur.message);
     }
 c1.afficher();
